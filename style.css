@@ -1,0 +1,118 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--off-black);
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: .875rem;
+    min-height: 100dvh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+li {
+    list-style: none;
+}
+
+.card {
+    align-items: center;
+    background-color: var(--dark-grey);
+    border-radius: 15px;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    margin: 1em;
+    max-width: 24rem;
+}
+
+.card__image-container {
+    height: 80px;
+    width: 80px;
+}
+
+.card__image {
+    border-radius: 50%;
+}
+
+.card__author-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    text-align: center;
+}
+
+.card__location {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.card__links {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card__link {
+    background-color: var(--grey);
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 600;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.card__link:hover {
+    background-color: var(--green);
+    color: var(--off-black);
+}
